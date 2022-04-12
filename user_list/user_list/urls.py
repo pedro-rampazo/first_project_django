@@ -22,6 +22,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user_data_viewer', include('user_data_viewer.urls')),
+    path('user_data_viewer/', include('user_data_viewer.urls')),
     path('', RedirectView.as_view(url='/user_data_viewer/')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
