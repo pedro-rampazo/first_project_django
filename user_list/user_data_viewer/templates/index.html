@@ -1,5 +1,5 @@
 {% extends 'base_generic.html' %}
 
 {% block content %}
-    <li>{{ name_persons }}</li>
+    <h1><a href='{% url 'persons' %}'>Number Of Persons: {{ num_persons }}</a></h1>
 {% endblock %}
