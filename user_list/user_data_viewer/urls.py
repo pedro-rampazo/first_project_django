@@ -3,5 +3,6 @@ from user_data_viewer import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('persons/', views.PersonListView.as_view(), name='persons'),
+    path('person/', views.PersonListView.as_view(), name='person'),
+    path('person/<int:pk>', views.PersonDetailView.as_view(), name='person-detail'),
 ]

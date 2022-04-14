@@ -1,0 +1,10 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+    <h2>Person Detail</h2>
+    <ul>
+        <p>Name: {{ person.name }}</p>
+        <p>Last Name: {{ person.last_name }}</p>
+        <p>Age: {{ person.age }}</p>
+    </ul>
+{% endblock %}

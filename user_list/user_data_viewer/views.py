@@ -1,3 +1,4 @@
+from re import template
 from unicodedata import name
 from django.shortcuts import render
 from user_data_viewer.models import Person
@@ -12,4 +13,8 @@ def index(request):
 
 
 class PersonListView(generic.ListView):
+    model = Person
+
+
+class PersonDetailView(generic.DetailView):
     model = Person
